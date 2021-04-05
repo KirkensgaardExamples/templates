@@ -1,9 +1,9 @@
-package miracle.com;
+package @packageName@;
 
+import @packageName@.authenticationservice.AuthenticationRequest;
 import io.grpc.stub.StreamObserver;
-import miracle.com.authenticationservice.AuthenticationGrpc;
-import miracle.com.authenticationservice.AuthenticationReply;
-import miracle.com.authenticationservice.AuthenticationRequest;
+import @packageName@.authenticationservice.AuthenticationGrpc;
+import @packageName@.authenticationservice.AuthenticationReply;
 
 import javax.inject.Singleton;
 import java.util.HashMap;

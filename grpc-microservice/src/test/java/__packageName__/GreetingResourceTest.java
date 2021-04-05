@@ -1,4 +1,4 @@
-package miracle.com;
+package __packageName__;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;
