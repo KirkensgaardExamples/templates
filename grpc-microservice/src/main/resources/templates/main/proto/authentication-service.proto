@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "miracle.com.authenticationservice";
+option java_outer_classname = "AuthenticationServiceProto";
+
+package authenticate;
+
+// The greeting service definition.
+service Authentication {
+  // Sends a greeting
+  rpc Authenticate (AuthenticationRequest) returns (AuthenticationReply) {}
+}
+
+// The request message containing the user's name.
+message AuthenticationRequest {
+  string id = 1;
+  string scope= 2;
+}
+
+// The response message containing the greetings
+message AuthenticationReply {
+  string authenticated = 1;
+}
