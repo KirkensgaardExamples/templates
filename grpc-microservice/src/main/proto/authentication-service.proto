@@ -1,7 +1,7 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "miracle.com.authenticationservice";
+option java_package = "@packageName@.authenticationservice";
 option java_outer_classname = "AuthenticationServiceProto";
 
 package authenticate;
