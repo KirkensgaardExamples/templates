@@ -3,5 +3,6 @@
 {"name":"Group Id","id":"groupId"},
 {"name":"Name","id":"name"},
 {"name":"Project Type","id":"projectType"},
-{"name":"Email", "id":"email"}
+{"name":"Email", "id":"email"},
+{"name":"Add Scope","id":"addScope"}
 ]
