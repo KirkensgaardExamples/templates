@@ -23,7 +23,8 @@ pipeline {
             parallel    {
                 stage('Build') {
                     steps {
-                        sh './mvnw clean build'
+                        sh 'chmod +x mvnw'
+                        sh './mvnw clean compile'
                     }
                 }
                 stage('Unit Test') {
@@ -50,7 +51,8 @@ pipeline {
         }
         stage('Build Docker Image'){
             steps{
-                sh "docker build -t ${dockerImage} ."
+                sh './mvnw package'
+                sh "docker build -f src/main/docker/Dockerfile.jvm -t ${dockerImage} ."
             }
         }
         stage('Run Docker Image'){
