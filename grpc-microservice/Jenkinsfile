@@ -23,8 +23,7 @@ pipeline {
             parallel    {
                 stage('Build') {
                     steps {
-                        sh 'chmod +x gradlew'
-                        sh './gradlew clean build'
+                        sh './mvnw clean build'
                     }
                 }
                 stage('Unit Test') {
